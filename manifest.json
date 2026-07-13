@@ -1,0 +1,9 @@
+{
+	"id": "footnote-mgr",
+	"name": "Footnote Manager",
+	"version": "1.0.0",
+	"minAppVersion": "1.7.2",
+	"description": "Consolidate, re-index, and navigate Markdown footnotes from a sidebar.",
+	"author": "Josh Glazer",
+	"isDesktopOnly": false
+}

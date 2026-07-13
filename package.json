@@ -1,0 +1,38 @@
+{
+	"name": "footnote-mgr",
+	"version": "1.0.0",
+	"description": "Consolidate, re-index, and navigate Markdown footnotes from a sidebar in Obsidian.",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"lint": "eslint src",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:coverage": "vitest run --coverage"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@eslint/json": "^2.0.0",
+		"@types/node": "^25.9.3",
+		"@vitest/coverage-v8": "^4.1.8",
+		"esbuild": "0.28.1",
+		"eslint": "^10.5.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-obsidianmd": "^0.3.0",
+		"prettier": "^3.8.4",
+		"tslib": "2.8.1",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.61.0",
+		"vitest": "^4.1.8"
+	},
+	"dependencies": {
+		"@codemirror/state": "6.6.0",
+		"@codemirror/view": "6.43.1",
+		"obsidian": "1.8.7"
+	}
+}
