@@ -247,10 +247,13 @@ export default class FootnoteMgrPlugin extends Plugin {
 		if (view instanceof MarkdownView) {
 			const editor = view.editor;
 			const pos = editor.offsetToPos(offset);
+			// Place the caret at the exact target (the reference ID, or the start of
+			// the definition text) without selecting or line-highlighting anything.
+			// setEphemeralState({ line }) would flash-highlight the whole line, which
+			// reads as selecting the subject text — so we scroll manually instead.
 			editor.setCursor(pos);
 			editor.scrollIntoView({ from: pos, to: pos }, true);
 			editor.focus();
-			view.setEphemeralState({ line: pos.line });
 		}
 	}
 

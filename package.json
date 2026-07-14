@@ -1,6 +1,6 @@
 {
 	"name": "footnote-mgr",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Consolidate, re-index, and navigate Markdown footnotes from a sidebar in Obsidian.",
 	"main": "main.js",
 	"type": "module",

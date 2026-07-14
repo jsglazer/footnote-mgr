@@ -1201,7 +1201,6 @@ var FootnoteMgrPlugin = class extends import_obsidian3.Plugin {
       editor.setCursor(pos);
       editor.scrollIntoView({ from: pos, to: pos }, true);
       editor.focus();
-      view.setEphemeralState({ line: pos.line });
     }
   }
   // ── Index-click → sidebar highlight ────────────────────────────────────────
