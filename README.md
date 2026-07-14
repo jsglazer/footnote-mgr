@@ -39,8 +39,8 @@ A single token is a symmetric delimiter; two tokens are an open/close pair.
 
 A right-panel list of the current note's footnotes:
 
-- **Click the number** to jump to the reference (index entry) in the document.
-- **Click the body** to jump to the definition.
+- **Click the number** to jump to the reference (index entry) in the document — the caret is placed at the reference, without selecting the surrounding text.
+- **Click the body** to jump to the definition, placing the caret at the start of the definition text.
 - **Full** — expand every footnote to its complete text (otherwise each is truncated to a configurable number of lines).
 - **Idx** — clicking a footnote reference in the document highlights the matching footnote in the sidebar. Highlight colors are configurable for **light and dark themes** independently.
 
